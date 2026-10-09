@@ -26,6 +26,12 @@ st.set_page_config(
 # Custom Cyber-Forensics Dark Theme
 st.markdown("""
 <style>
+    /* 🚫 HIDE STREAMLIT TOP TOOLBAR (GitHub, Edit, Share, MainMenu) */
+    header[data-testid="stHeader"] { display: none !important; }
+    [data-testid="stToolbar"] { display: none !important; }
+    #MainMenu { visibility: hidden !important; }
+    footer { visibility: hidden !important; }
+    
     .main-title { font-size: 2.4rem !important; font-weight: 800; color: #FFFFFF; margin-bottom: 0px; }
     .sub-title { font-size: 1.1rem !important; font-weight: 500; color: #00d2ff; margin-bottom: 25px; }
     
@@ -41,7 +47,6 @@ st.markdown("""
     .metric-value { font-size: 1.35rem; color: #FFFFFF; font-weight: 800; margin-top: 4px; }
 </style>
 """, unsafe_allow_html=True)
-
 # ==========================================
 # CONNECTORS & RESOURCE CACHING
 # ==========================================
